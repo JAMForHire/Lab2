@@ -41,6 +41,18 @@ main {
   margin: 1% 1% 0% 0%;
 }
 
+.links a:link {
+  color: white;
+}
+
+.links a:visited {
+  color: gray;
+}
+
+.links a:hover {
+  color: lightgray;
+}
+
 .article_title {
   margin: 0px;
 }
