@@ -1,0 +1,42 @@
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+
+  background-color: sandybrown;
+}
+
+main {
+  width: 90%;
+  min-height: 100vh;
+  height: max-content;
+  margin-left: 5%;
+  margin-right: 3%;
+  background-color: white;
+}
+
+.nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  margin: 0px;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  text-align: end;
+}
+
+.article_title {
+  margin: 0px;
+}
+
+.card {
+  border-style: solid;
+  width: 30%;
+  height: 20vh;
+}
