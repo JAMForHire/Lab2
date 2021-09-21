@@ -18,17 +18,39 @@ main {
 
 .nav {
   display: flex;
+  justify-content: space-between;
   background-color: black;
   color: white;
   margin: 0px;
   width: 100%;
 }
 
+.nav_item {
+  margin: 1% 25% 1% 1%;
+  font-size: 170%;
+}
+
+.title {
+  font-size: 225%;
+  width: 20%;
+}
+
 .links {
   display: flex;
-  width: 100%;
   justify-content: end;
-  text-align: end;
+  margin: 1% -1.5% 0% 0%;
+}
+
+.links a:link {
+  color: white;
+}
+
+.links a:visited {
+  color: rgb(161, 159, 159);
+}
+
+.links a:hover {
+  color: lightgray;
 }
 
 .article_title {
