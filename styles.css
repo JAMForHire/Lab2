@@ -4,7 +4,8 @@ html, body {
   margin: 0px;
   overflow-x: hidden;
 
-  background-color: sandybrown;
+  background-image: url("assets/constitution.png");
+  background-size: cover;
 }
 
 main {
