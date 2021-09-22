@@ -1,3 +1,4 @@
+/* General html and body config */
 html, body {
   min-width: 100%;
   min-height: 100%;
@@ -7,26 +8,44 @@ html, body {
   background-color: sandybrown;
 }
 
+/* Main content styling */
 main {
   width: 90%;
+
+  /* Min be screen height */
   min-height: 100vh;
+  /* Else be content height */
   height: max-content;
+  /* Add space for background image */
   margin-left: 5%;
   margin-right: 3%;
+
   background-color: white;
 }
 
-.nav {
+/* Remove h2 margins */
+h2 {
+  margin: 0px;
+}
+
+/* Navbar styling */
+nav.nav {
+  /* Horizontal content */
   display: flex;
+  /* Text and bg styling */
   background-color: black;
   color: white;
+  /* Sizing */
   margin: 0px;
   width: 100%;
 }
 
+/* Links styles */
 .links {
+  /* Horiontal content */
   display: flex;
   width: 100%;
+  /* "Float" right */
   justify-content: end;
   text-align: end;
 }
@@ -34,29 +53,35 @@ main {
 .article_title {
   margin: 0px;
 }
+
 .card {
   border-style: solid;
   width: 30%;
   height: 20vh;
 }
+
 .flip-card-inner {
   position: relative;
   text-align: center;
   transition:all .4s ease;
   transform-style: preserve-3d;
 }
+
 .cardf, .cardb {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
+
 .cardb{
   transform: rotateY(180deg);
 }
+
 .flip-card-inner2 {
   transform: rotateY(180deg);
 }
+
 .flip-card-inner3 {
   transform: rotateY(-180deg);
 }
