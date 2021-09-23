@@ -58,14 +58,24 @@ main {
   color: lightgray;
 }
 
+
+section.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
 .article_title {
   margin: 0px;
 }
 
 .card {
+  margin-top: 5px;
+  margin-left: 5px;
   border-style: solid;
-  width: 30%;
-  height: 20vh;
+  width: 100%;
+  height: 40vh;
+  overflow-y: scroll;
 }
 
 .flip-card-inner {
