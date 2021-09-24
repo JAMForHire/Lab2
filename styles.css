@@ -78,7 +78,7 @@ section.article {
   overflow-y: auto;
 }
 
-.flip-card-inner {
+.inner {
   position: relative;
   text-align: center;
   transition:all .4s ease;
@@ -92,14 +92,14 @@ section.article {
   backface-visibility: hidden;
 }
 
-.cardb{
+.cardb {
   transform: rotateY(180deg);
 }
 
-.flip-card-inner2 {
+.inner2 {
   transform: rotateY(180deg);
 }
 
-.flip-card-inner3 {
+.inner3 {
   transform: rotateY(-180deg);
 }
