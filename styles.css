@@ -1,97 +1,137 @@
+/* Main page css  */
 html, body {
+  /* Ensure full page width and height */
   min-width: 100%;
   min-height: 100%;
+  /* Remove margins */
   margin: 0px;
+  /* Prevent horizontal scroll */
   overflow-x: hidden;
 
+  /* Background image settings */
   background-image: url("assets/constitution.png");
   background-size: cover;
 }
 
+/* Remove margins for all headers */
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }
 
+/* Main tag css */
 main {
+  /* Take only portion width and screen/content height */
   width: 90%;
   min-height: 100vh;
   height: max-content;
+
+  /* Add some margins left and right to create space */
   margin-left: 5%;
   margin-right: 3%;
+
+  /* Background color */
   background-color: white;
 }
 
+/* Navbar CSS */
 .nav {
+  /* Horizontal text */
   display: flex;
   justify-content: space-between;
+  /* Colors */
   background-color: black;
   color: white;
+  /* Remove margin and include full width */
   margin: 0px;
   width: 100%;
 }
 
 .nav_item {
+  /* Spacing items and sizes */
   margin: 1% 25% 1% 1%;
   font-size: 170%;
 }
 
+/* Title sizes and width */
 .title {
   font-size: 225%;
   width: 20%;
 }
 
+/* Links CSS */
 .links {
+  /* Horizontal Text */
   display: flex;
   justify-content: end;
   margin: 1% -1.5% 0% 0%;
 }
 
+/* Links color */
 .links a:link {
   color: white;
 }
 
+/* Visited Links color */
 .links a:visited {
   color: rgb(161, 159, 159);
 }
 
+/* Hover link color */
 .links a:hover {
   color: lightgray;
 }
 
-
+/* Section CSS */
 section.article {
+  /* Create cards in 3x grid */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
 }
 
+/* Remove margin from titles */
 .article_title {
   margin: 0px;
 }
 
+/* Card Styles */
 .card {
+  /* Create margins for spacing */
   margin-top: 5px;
   margin-left: 5px;
+  /* Border styling */
   border-style: solid;
+  border-radius: 5%;
+  /* Card sizes */
   width: 80%;
   height: 40vh;
+  /* If too much content, scroll */
   overflow-y: auto;
 }
 
+/* Inner part of card */
 .inner {
+  /* Position text  */
   position: relative;
   text-align: center;
+
+  /* Animation transition time and style */
   transition:all .4s ease;
   transform-style: preserve-3d;
 }
 
+/* Basic sides styling */
 .cardf, .cardb {
+  /* Ignore parent positioning */
   position: absolute;
+  /* Full size */
   width: 100%;
   height: 100%;
+  /* Hide the back */
   backface-visibility: hidden;
 }
 
+/* Animations */
 .cardb {
   transform: rotateY(180deg);
 }
